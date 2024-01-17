@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
+
+body {
+    height: 100vh;
+    background: radial-gradient(ellipse at bottom, #6b1818, #111);
+    position: relative;
+}
+
+.textFirstPage {
+    display: flex;
+    justify-content: center; /* Center content horizontally */
+    align-items: center;
+    margin: 0;
+}
+
+h1 {
+    color: white;
+    font-family: 'Instrument Sans', sans-serif;
+}
+
+.Head {
+    position: absolute;
+    left: 35%;
+    top: 22%;
+    width: 470px;
+    height: 300px;
+    border-radius: 70px;
+    background: #FFF;
+    transform: rotate(-11.131deg);
+}
+
+.eyeOne {
+    position: absolute;
+    left: 40%;
+    top: 35%;
+    width: 100px;
+    height: 100px;
+    border-radius: 60px;
+    background: #F8BCBC;
+    transform: rotate(-11.131deg);
+}
+
+.InnerEyeOne {
+    position: absolute;
+    left: 41.7%;
+    top: 38%;
+    width: 50px;
+    height: 50px;
+    border-radius: 60px;
+    background: #DF6363;
+    transform: rotate(-11.131deg); 
+}
+
+.eyeTwo {
+    position: absolute;
+    left: 55%;
+    top: 30%;
+    width: 100px;
+    height: 100px;
+    border-radius: 60px;
+    background: #F8BCBC;
+    transform: rotate(-11.131deg);
+}
+
+
+.InnerEyeTwo {
+    position: absolute;
+    left: 56.6%;
+    top: 33.2%;
+    width: 50px;
+    height: 50px;
+    border-radius: 60px;
+    background: #DF6363;
+    transform: rotate(-11.131deg); 
+}
+
+.nose {
+    position: absolute;
+    left: 49.7%;
+    top: 44%;
+    width: 0; 
+  height: 0; 
+  border-left: 30px solid transparent;
+  border-right: 30px solid transparent;
+  transform: rotate(-11.131deg); 
+  border-top: 30px solid #F8BCBC;
+}
+
+
+.earLeft {
+    position: absolute;
+    left: 32%;
+    top: 14%;
+    width: 50px;
+    width: 0;
+	height: 0;
+	border-left: 70px solid transparent;
+	border-right: 70px solid transparent;
+	border-bottom: 140px solid #ffffff;
+    transform: rotate(-27.88deg);
+}
+
+.earRight {
+    position: absolute;
+    left: 55%;
+    top: 6.5%;
+    width: 50px;
+    width: 0;
+	height: 0;
+	border-left: 70px solid transparent;
+	border-right: 70px solid transparent;
+	border-bottom: 140px solid #ffffff;
+    transform: rotate(4deg);
+}
+
+.luna {
+    
+}
