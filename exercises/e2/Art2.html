@@ -8,7 +8,7 @@
         body {
             background: rgb(255, 255, 255);
         }
-
+/* Laying out grid 17 X 17 */
         .painting-1 {
             display: grid;
             width: 600px;
@@ -16,7 +16,7 @@
             grid-template-rows: repeat(17, 1fr);
             grid-template-columns: repeat(17, 1fr);
         }
-
+/* Organizing the colours that will be utilized within the grid */
         .black {
             background: #000000;
         }
@@ -54,10 +54,11 @@
             background: #ebd138;
         }
 
+/* Right border will be used to replicate the drawing */
         .border-right {
             border-right: 15px solid #4B4444;
         }
-
+/* Bottom border will be used to replicate the drawing */
         .border-bottom {
             border-bottom: 15px solid #4B4444;
         }
@@ -82,6 +83,7 @@
             background: #1f22af;
         }
 
+        /* Bottom border will be used to replicate the drawing */
         .border-bottom-dred {
             border-bottom: 15px solid #E94734;
         }
@@ -90,6 +92,7 @@
             background-color: #E94734;
         }
 
+    /* This line of code was added to complete the art */
         .painting-1 {
             background-color: #E94734;
         }
@@ -98,9 +101,13 @@
 </head>
 
 <body>
-
+<!-- Link to the next art piece along with the title of the first art work -->
     <h1>Art 2</h1>
-    <a href="Art 3.html">Next</a>
+    <a href="Art3.html">Next</a>
+    <div class="painting-1">
+
+        <!-- 
+    Each div in every row represents one small sqaure that will have a color and/or a right or bottom border -->
     <div class="painting-1">
         <!-- Row 1 -->
         <div class="navy"></div>
@@ -467,9 +474,3 @@
 </body>
 
 </html>
-
-<!-- 
-INTERACTIVE MEDIA WEB
-interactivemediaweb.net
-Peter ha pha@ocadu.ca
--->

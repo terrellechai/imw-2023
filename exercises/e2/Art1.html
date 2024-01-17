@@ -6,7 +6,7 @@
       body {
         background: rgb(255, 255, 255);
       }
-
+      /* Laying out grid 15 X 15 */
       .painting-1 {
         display: grid;
         width: 600px;
@@ -15,6 +15,7 @@
         grid-template-columns: repeat(15, 1fr);
       }
 
+      /* Organizing the colours that will be utilized within the grid */
       .red {
         background: #e94734;
       }
@@ -31,18 +32,22 @@
         background: #f7de00;
       }
 
+      /* Right border will be used to replicate the drawing */
+
       .border-right {
         border-right: 15px solid #4b4444;
       }
 
+      /* Bottom border will be used to replicate the drawing */
       .border-bottom {
         border-bottom: 15px solid #4b4444;
       }
     </style>
-
+    <!-- Link to the next art piece along with the title of the first art work -->
     <h1>Art 1</h1>
-    <a href="Art 2.html">Next</a>
-
+    <a href="Art2.html">Next</a>
+    <!-- 
+    Each div in every row represents one small sqaure that will have a color and/or a right or bottom border -->
     <div class="painting-1">
       <!-- Row 1 -->
       <div class="cream"></div>
