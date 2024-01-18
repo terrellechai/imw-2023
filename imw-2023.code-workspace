@@ -1,14 +1,7 @@
 {
-	"folders": [
-		{
-			"path": "."
-		},
-		{
-			"name": "imw-2023-1",
-			"path": "../../imw-2023-1"
-		}
-	],
-	"settings": {
-		"liveServer.settings.multiRootWorkspaceName": "imw-2023"
-	}
+    "folders": [
+        {
+            "path": "."
+        }
+    ]
 }
