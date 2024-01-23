@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- plate for the food -->
+    <div class="plate">
+      <div class="inner-circle"></div>
+      <div class="fish" id="fish">
+        <div class="fish-tri-1"></div>
+        <div class="fish-tri-2"></div>
+        <div class="fish-eye"></div>
+      </div>
+    </div>
+
+    <br />
+
+    <h1>Hmm, would you like?</h1>
+    <br />
+
+    <a href="storybook5-1.html" class="buttonOne">ADD</a>
+    <a href="storybook3-1.html" class="btn2">SKIP</a>
+
+    <style>
+      body {
+        background: radial-gradient(ellipse at bottom, #8e1e29, #111111);
+        display: flex;
+        justify-content: center; /* Center content horizontally */
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+      }
+
+      h1,
+      h2 {
+        color: #ffffff;
+      }
+
+      h1 {
+        margin-left: 20px;
+        margin-right: 10px;
+      }
+
+      .plate {
+        width: 500px;
+        height: 500px;
+        background-color: #d3d3d3;
+        border-radius: 50%;
+        border: 5px solid #808080;
+        position: relative;
+        margin-bottom: 20px; /* Add margin to separate plate from text */
+        margin-right: 50px;
+      }
+
+      .inner-circle {
+        width: 440px;
+        height: 440px;
+        background-color: #ffffff;
+        border-radius: 50%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(
+          -50%,
+          -50%
+        ); /* horizontally and vertically center the inner plate */
+      }
+
+      .buttonOne,
+      .btn2 {
+        display: block;
+        padding: 10px 20px;
+        font-family: "Instrument Sans", sans-serif;
+        font-weight: 500;
+        font-size: 16px;
+        text-align: center;
+        text-decoration: none;
+        padding: 12px 40px;
+        color: #6b1818;
+        border-radius: 20px;
+        background-color: #fff;
+        margin-right: 10px; /* Add margin between buttons */
+        margin-left: 10px;
+      }
+
+      .buttonOne:hover,
+      .btn2:hover {
+        background-color: #8a4f4f;
+        color: #fff;
+      }
+
+      .fish-tri-1 {
+        width: 0;
+        height: 0;
+        border-top: 80px solid transparent;
+        border-bottom: 80px solid transparent;
+        position: absolute;
+        border-left: 120px solid #ecbfbf; /* Triangular fish fin 1 */
+        left: 260px;
+        top: 150px;
+      }
+
+      .fish-tri-2 {
+        width: 0;
+        height: 0;
+        border-top: 60px solid transparent;
+        border-bottom: 60px solid transparent;
+        position: absolute;
+        border-left: 80px solid #ecbfbf; /* Triangular fish fin 2 */
+        left: 180px;
+        top: 170px;
+      }
+
+      .fish-eye {
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        border-radius: 50px;
+        background-color: #481d1d; /* Fish eye color */
+        left: 310px;
+        top: 210px;
+      }
+
+      .fish {
+        position: absolute; /* Fish animation */
+        animation: swim 1s linear infinite alternate; /* Fish animation */
+      }
+
+      .fish:hover {
+        animation: swim 1s linear infinite alternate-reverse;
+        position: absolute;
+        cursor: pointer;
+      }
+
+      @keyframes swim {
+        to {
+          transform: translateX(5vw); /* Fish animation translation */
+        }
+      }
+    </style>
+
+    <script src="script.js">
+
+      const fish = document.getElementById('fish'); /* Get the fish element by its ID */
+
+      fish.addEventListener('mouseover', () => {
+          fish.style.animationPlayState = 'paused'; /* Pause fish animation on mouseover */
+      });
+
+      fish.addEventListener('mouseout', () => {
+          fish.style.animationPlayState = 'running';
+      });
+    </script>
+  </body>
+</html>

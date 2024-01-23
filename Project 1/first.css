@@ -1,24 +1,49 @@
+/* Importing the 'Instrument Sans' font from Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
 
+
+/* Styling for the entire body */
 body {
     height: 100vh;
     background: radial-gradient(ellipse at bottom, #6b1818, #111);
     position: relative;
 }
 
+/* Styling for text on the first page */
 .textFirstPage {
     align-items: center;
-    margin: 0;
+    margin-left: 40%;
     position: absolute;
-    /* top:;
-    left:; */
     bottom: 100px;
-
+    text-align: center;
 }
 
 h1 {
     color: white;
     font-family: 'Instrument Sans', sans-serif;
+
+}
+
+h2 {
+    color: white;
+    font-family: 'Instrument Sans', sans-serif;
+    margin-bottom: 35px;
+}
+/* Styling for buttonOne anchor element */
+a.buttonOne {
+    padding: 12px 40px;
+    color: #6b1818;
+    font-weight: 500;
+    border-radius: 20px;
+    background-color: #FFF;
+    margin-top: 60px;
+    font-size: 19px;
+    text-decoration: none;
+}
+
+a.buttonOne:hover {
+    background-color: #672f2f; 
+    color: #FFF;
 }
 
 .Head {
@@ -114,8 +139,4 @@ h1 {
 	border-right: 70px solid transparent;
 	border-bottom: 140px solid #ffffff;
     transform: rotate(4deg);
-}
-
-.luna {
-    
 }

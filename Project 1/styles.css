@@ -1,8 +1,4 @@
-/* * {
-    margin: 0%;
-    padding: 0%;
-    box-sizing: border-box;
-} */
+
 
 body {
     background: radial-gradient(ellipse at bottom, #6b1818, #111);
@@ -20,15 +16,6 @@ h2 {
     color: #ffffff;
 }
 
-/* .buttonOne {
-
-}
-
-.FoodContainer {
-    background-color: white;
-    width: 30px;
-    height 30px;
-} */
 
 .plate {
     width: 400px;

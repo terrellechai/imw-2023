@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image Example</title>
+
+    <style>
+      body {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(400px, 7fr));
+        gap: 15px;
+        justify-content: center;
+        align-items: center;
+        margin: 20px;
+        background: radial-gradient(ellipse at bottom, #8e1e29, #111111);
+        color: white;
+      }
+
+      img {
+        width: 100%; /* Make images take 100% of the width of their container */
+        height: auto; /* Maintain the aspect ratio */
+        max-width: 100%; /* Ensure images don't exceed their natural size */
+        display: block; /* Remove extra spacing below inline images */
+      }
+
+      a.buttonOne {
+        padding: 12px 10px;
+        text-align: center;
+        color: #6b1818;
+        font-weight: 500;
+        border-radius: 20px;
+        background-color: #fff;
+        margin-top: 60px;
+        font-size: 19px;
+        text-decoration: none;
+      }
+
+      a.buttonOne:hover {
+        background-color: #672f2f;
+        color: #fff;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Process Photos</h1>
+
+    <!-- Replace 'path/to/your/image.jpg' with the actual path to your image file -->
+    <img src="/img-process/Group 3.png" alt="Image 1" />
+    <img src="/img-process/img1.png" alt="Image 2" />
+    <img src="/img-process/img2.png" alt="Image 3" />
+    <img src="/img-process/img3.png" alt="Image 4" />
+    <img src="/img-process/img4.png" alt="Image 5" />
+    <img src="/img-process/img5.png" alt="Image 6" />
+
+    <a href="index.html" class="buttonOne">Play Again</a>
+  </body>
+</html>
