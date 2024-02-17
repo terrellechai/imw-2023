@@ -279,7 +279,7 @@ body {
     grid-column: 10 / 19;
     grid-row: 10 / 16;
     color: white;
-    display: inline-block;
+    display: inline;
 }
 
 .f-name {
@@ -536,4 +536,20 @@ body {
     color: #F7F7F7;
     padding: 15px;
     margin: 0px;
+}
+
+.process-btn {
+    grid-column: 17 / 20;
+    background-color: #dc2424;
+    border: none;
+    color: white;
+    padding: 15px 85px;
+    border-radius: 40px;
+    cursor: pointer;
+    font-size: 15px;
+    justify-content: center;
+    font-family: "Instrument Sans", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    text-decoration: none;
 }
