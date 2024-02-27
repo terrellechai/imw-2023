@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Exercise 6</title>
+    <meta charset="UTF-8" />
+    <meta name="author" content="Peter Ha" />
+    <meta name="description" content="Exercise file for E5 - Javascript" />
+    <!-- Preconnect to external font resources -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- Link to external CSS file for fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;500;700&family=Xanh+Mono:ital@0;1&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <!-- Main container with a grid layout -->
+    <main class="grid-container">
+      <!-- Section for the Interaction exercise -->
+      <section class="exercise" id="interactionContainer">
+        <!-- Heading for the section -->
+        <h2>Interaction</h2>
+        <p>Click on a circle to change background color of this container.</p>
+        <!-- Three div elements representing colored circles for interaction -->
+        <div class="colors" id="green"></div>
+        <div class="colors" id="plum"></div>
+        <div class="colors" id="blue"></div>
+      </section>
+
+      <!-- Section for the Loop exercise -->
+      <section class="exercise" id="loopContainer">
+        <!-- Heading for the section -->
+        <h2>Loop</h2>
+        <!-- Paragraph providing instructions for the exercise -->
+        <p>Use a for loop to add repeating text to this container.</p>
+      </section>
+
+      <!-- Section for the Condition exercise -->
+      <section class="exercise" id="conditionContainer">
+        <!-- Heading for the section -->
+        <h2>Condition</h2>
+        <!-- Paragraph providing instructions for the exercise -->
+        <p>Change the color of the square based on a set of conditions.</p>
+        <!-- Div element representing a square for condition-based color change -->
+        <div id="square"></div>
+      </section>
+
+      <!-- Section for the Time exercise -->
+      <section class="exercise" id="timeContainer">
+        <!-- Heading for the section -->
+        <h2>Time</h2>
+        <!-- Paragraph providing instructions for the exercise -->
+        <p>Increase the font size of the text below as time passes.</p>
+        <!-- Paragraph element with an ID for time-based font size increase -->
+        <p id="increaseText">Increase</p>
+      </section>
+
+      <!-- Section for the Input exercise -->
+      <section class="exercise" id="inputContainer">
+        <!-- Heading for the section -->
+        <h2>Input</h2>
+        <!-- Paragraph providing instructions for the exercise -->
+        <p>Display the number of characters from the input field.</p>
+        <!-- Paragraph element with an ID to display the input field's value -->
+        <p id="text-length">Display value here</p>
+        <!-- Form element with an input field and a submit button -->
+        <form id="form">
+          <input type="text" placeholder="Type something!" id="inputText" />
+          <button type="submit" id="submit">Submit</button>
+        </form>
+      </section>
+
+      <!-- Section for the Console exercise -->
+      <section class="exercise" id="consoleContainer">
+        <!-- Heading for the section -->
+        <h2>Console</h2>
+        <!-- Paragraph providing instructions for the exercise -->
+        <p>Print a message of your choice to the console.</p>
+      </section>
+    </main>
+    <!-- Script tag linking to an external JavaScript file with async attribute -->
+    <script src="script.js" async></script>
+  </body>
+</html>
