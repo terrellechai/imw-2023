@@ -1,0 +1,184 @@
+/* Resetting margin, padding, color, and text-decoration for all elements */
+* {
+    margin: 0;
+    padding: 0;
+    color: black;
+    text-decoration: none;
+}
+
+/* Setting the font family for the entire body */
+body {
+    font-family: sans-serif;
+}
+
+/* Styling for the header section */
+header {
+    background-color: white;
+    border: 1px solid black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 36px;
+}
+
+/* Styling for the footer section */
+footer {
+    background-color: rgb(255, 255, 255);
+    border: 1px solid black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 36px;
+}
+
+/* Styling for links with the class 'site-name' */
+a.site-name {
+    padding-left: 20px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Styling for unordered lists */
+ul {
+    list-style-type: none;
+
+    /* Styling for list items in the navigation */
+    li {
+        display: inline-block;
+
+        /* Margin settings for the first and second list items */
+        &:first-child {
+            margin-right: 44px;
+        }
+
+        &:nth-child(2) {
+            margin-right: 44px;
+        }
+    }
+}
+
+/* Styling for the hero section */
+.hero-section {
+    height: 100vh;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* Styling for H1 headers in the hero section */
+h1 {
+    font-size: 120px;
+    line-height: 106px;
+    margin-bottom: 52px;
+}
+
+/* Styling for a specific call-to-action element */
+.call-to-action1 {
+    text-transform: uppercase;
+    color: black;
+    text-decoration: underline;
+    font-size: 14px;
+    font-weight: bold;
+    padding-bottom: 20px;
+}
+
+/* Styling for H2 headers */
+H2 {
+    font-weight: 500;
+}
+
+/* Styling for the info section */
+.info-section {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    height: 400px;
+}
+
+/* Styling for H3 headers in the info section */
+h3 {
+    padding: 35px 30px;
+}
+
+/* Styling for a specific section with the class 'threeps' */
+.threeps {
+    padding-left: 30px;
+    padding-bottom: 140px;
+}
+
+/* Styling for another call-to-action element */
+.call-to-action2 {
+    text-transform: uppercase;
+    color: black;
+    padding: 35px 30px;
+    text-decoration: underline;
+    font-size: 14px;
+    font-weight: bold;
+    padding-bottom: 20px;
+}
+
+/* Styling for items in the info section */
+.info-section-item {
+    border: 1px solid black;
+    padding: 30px 30px;
+}
+
+/* Styling for the footer section (again) */
+footer {
+    padding: 40px 40px;
+    margin-right: 10px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    height: 100px;
+    flex-direction: column;
+    width: 100%;
+}
+
+/* Styling for a paragraph with the class 'f-para' */
+.f-para {
+    padding-bottom: 50px;
+    padding-left: 20px;
+    margin-top: 10px;
+    font-size: 12px;
+    color: grey;
+}
+
+/* Styling for links in a specific section */
+.links {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+    text-decoration: none;
+    color: black;
+}
+
+/* Styling for all div elements */
+div {
+    width: 80%;
+}
+
+/* Styling for a specific section with the class 'link-right' */
+.link-right {
+    display: grid;
+    justify-content: flex-end;
+    margin-right: 50px;
+    padding-bottom: 20px;
+    list-style-type: none;
+
+    /* Styling for list items in the 'link-right' section */
+    li {
+        display: block;
+        margin-top: 20px;
+
+        /* Margin settings for the first and second list items */
+        &:first-child {
+            margin-top: 20px;
+        }
+
+        &:nth-child(2) {
+            margin-top: 20px;
+        }
+    }
+}

@@ -1,0 +1,106 @@
+/* Resetting default styles for padding, margin, and box-sizing */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Setting the font family for the entire body */
+body {
+    font-family: 'Inconsolata', Courier, monospace;
+}
+
+/* Styling for heading level 2 (h2) */
+h2 {
+    font-family: 'Xanh Mono', Courier, monospace;
+    font-size: clamp(24px, 3vw, 48px);
+}
+
+/* Styling for paragraphs (p) */
+p {
+    font-size: clamp(20px, 1.5vw, 32px);
+    margin: 20px 0;
+}
+
+/* Styling for input elements */
+input {
+    font-family: 'Inconsolata', Courier, monospace;
+    font-size: clamp(20px, 1.5vw, 32px);
+    padding: 10px;
+    display: block;
+    margin-bottom: 10px;
+    border: 2px solid black;
+
+}
+
+/* Styling for button elements */
+button {
+    font-family: 'Inconsolata', Courier, monospace;
+    font-size: clamp(20px, 1.5vw, 32px);
+    padding: 10px;
+    border: 2px solid black;
+    background: none;
+    cursor: pointer;
+    background: white;
+    /* Hover effect for buttons */
+    &:hover {
+        background-color: rgb(26, 26, 26);
+        color: white;
+    }
+}
+/* Styling for a grid container */
+.grid-container {
+    display: grid;
+    width: 100%;
+    height: 100vh;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    /* Responsive layout adjustments */
+    @media (max-width: 700px) {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media (max-width: 480px) {
+        display: block;
+    }
+}
+/* Styling for elements with the class 'exercise' */
+.exercise {
+    border: 1px solid black;
+    padding: 32px;
+}
+/* Styling for colored circles with specific IDs */
+.colors {
+    display: inline-block;
+    border: 2px solid black;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+    /* Specific color styles based on IDs */
+    &#green {
+        background-color: lightgreen;
+    }
+
+    &#plum {
+        background-color: plum;
+    }
+
+    &#blue {
+        background-color: lightblue;
+    }
+}
+/* Styling for an element with the ID 'square' */
+#square {
+    background: lightsalmon;
+    width: 100px;
+    height: 100px;
+}
+/* Styling for an element with the ID 'text-length' */
+#text-length {
+    font-weight: 600;
+}
+/* Styling for spans inside an element with the ID 'loopContainer' */
+#loopContainer span {
+    display: inline-block;
+}

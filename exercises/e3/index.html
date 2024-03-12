@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://use.typekit.net/cpq6imf.css" />
+    <style>
+      body {
+        background-color: beige;
+        display: grid;
+        place-items: center;
+        height: 100vh;
+        margin: 0;
+        font-size: 40px;
+      }
+
+      @import url("https://fonts.googleapis.com/css2?family=Anton&display=swap");
+      .hidden-word {
+        transition: color 1.3s ease-in-out;
+      }
+
+      .hidden-word:hover {
+        color: transparent;
+        cursor: pointer;
+      }
+
+      .grow-on-hover {
+        display: inline-block;
+        font-size: 30px;
+        transition: font-size 2.4s ease-in-out;
+        font-family: "opake", sans-serif;
+        font-weight: 900;
+        font-style: normal;
+        cursor: pointer;
+      }
+
+      .grow-on-hover:hover {
+        font-size: 400px;
+        font-family: "opake", sans-serif;
+        font-weight: 900;
+        font-style: normal;
+        cursor: pointer;
+        color: green;
+      }
+
+      .flip-container {
+        perspective: 1000px;
+        display: inline-block;
+        font-family: "Anton", sans-serif;
+        font-weight: 900;
+        cursor: pointer;
+      }
+
+      .flip-container:hover .flipper {
+        transform: rotateY(180deg);
+        font-family: "Anton", sans-serif;
+        font-weight: 900;
+        cursor: pointer;
+        color: blue;
+      }
+
+      .flipper {
+        transition: transform 0.6s;
+        transform-style: preserve-3d;
+        cursor: pointer;
+      }
+
+      .flipper,
+      .flipper .front,
+      .flipper .back {
+        width: 100px;
+        height: 40px;
+        font-family: "Anton", sans-serif;
+        font-weight: 900;
+        cursor: pointer;
+      }
+
+      .flipper .front,
+      .flipper .back {
+        backface-visibility: hidden;
+        position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: "Anton", sans-serif;
+        font-weight: 900;
+        cursor: pointer;
+      }
+
+      .flipper .front {
+        color: black;
+        font-family: "Anton", sans-serif;
+        font-weight: 900;
+        cursor: pointer;
+        font-size: 60px;
+      }
+
+      .flipper .back {
+        color: black;
+        transform: rotateY(180deg);
+        font-family: "Anton", sans-serif;
+        font-weight: 900;
+        cursor: pointer;
+      }
+
+      @font-face {
+        font-family: "Adjuster-UdL1dTTn7I";
+        src: url("font/Adjuster-UdL1dTTn7I.eot");
+        src: url("font/Adjuster-UdL1dTTn7I.eot?#iefix")
+            format("embedded-opentype"),
+          url("font/Adjuster-UdL1dTTn7I.woff") format("woff"),
+          url("font/Adjuster-UdL1dTTn7I.ttf") format("truetype"),
+          url("font/Adjuster-UdL1dTTn7I.svg#Adjuster-UdL1dTTn7I") format("svg");
+      }
+
+      .hidden-word {
+        font-family: "Adjuster-UdL1dTTn7I";
+      }
+    </style>
+  </head>
+  <body>
+    <p class="hidden-word">Fade</p>
+    <div class="grow-on-hover">Grow</div>
+
+    <div class="flip-container">
+      <div class="flipper">
+        <div class="front">Flip</div>
+        <div class="back">pilF</div>
+      </div>
+    </div>
+  </body>
+</html>

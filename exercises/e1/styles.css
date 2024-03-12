@@ -1,0 +1,75 @@
+/* Embedding the font into my code */
+  @import url('https://fonts.googleapis.com/css2?family=Instrument+Sans&display=swap');
+
+body {
+    background-color: #202020;
+    /* changing the colour of the background */
+}
+
+
+h1 {
+  /* styling my header */
+    color: #F1F1F1;
+    text-align: center;
+    font-family: Instrument Sans;
+    font-size: 80px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+span {
+  /* I used this tag to only style my name, I used a linear gradient to add contrast */
+    background: linear-gradient(180deg, #cf80ec 0%, rgba(237, 220, 244, 0) 100%);
+    background-clip: text;
+    /* I decided to use webkit property add a transparent effect ot the text */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: Instrument Sans;
+    font-size: 80px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.logo-container button {
+    border-radius: 76px;
+    background: #D9D9D9;
+}
+
+a {
+    margin: 15px 641px 1321px 641px;
+    text-align: center;
+    font-family: Instrument Sans;
+    font-style: bold;
+    font-weight: 800;
+}
+
+a:link, a:visited {
+  /* Non clicked on state */
+    background-color: #f8f8f8;
+    border-radius: 76px;
+    color: #4A3352;
+    padding: 14px 15px;
+    text-align: center;
+    text-decoration: none;
+    /* I used this to assist in making thr logo and text stay next to each other */
+    display: inline-block;
+  }
+  
+  a:hover, a:active {
+    /* Hover state */
+    background-color: #D9D9D9;
+  }
+
+
+  h2 {
+    text-align: center;
+    color: #F1F1F1;
+text-shadow: 0px -0.517px 10.939px rgba(255, 255, 255, 0.30);
+font-family: Instrument Sans;
+font-size: 1.5rem;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+  }
