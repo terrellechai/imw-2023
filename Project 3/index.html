@@ -1,0 +1,94 @@
+<!-- Resources: 
+https://www.youtube.com/watch?v=G0jO8kUrg-I, 
+https://www.youtube.com/watch?v=MkESyVB4oUw, 
+https://www.youtube.com/watch?v=W7FaYfuwu70&t=2s, 
+https://www.youtube.com/watch?v=CsO0UJSqaw0, 
+https://www.youtube.com/watch?v=oMt3U1zfoe0 -->
+
+<!DOCTYPE html>
+<!-- Defines the document type and version of HTML -->
+<html lang="en">
+  <!-- Defines the language of the document -->
+  <head>
+    <meta charset="UTF-8" />
+    <!-- Defines the character encoding for the document -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Sets the viewport for responsive design -->
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!-- Sets the compatibility mode for Internet Explorer -->
+    <title>Terrell's To Do list</title>
+    <!-- Sets the title of the document -->
+
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
+    />
+
+    <link rel="stylesheet" href="styles.css" />
+    <!-- Links to custom CSS stylesheet -->
+    <link rel="stylesheet" href="reset.css" />
+    <!-- Links to CSS stylesheet for resetting default styles -->
+  </head>
+
+  <body>
+    <div class="container">
+      <!-- Container for holding content -->
+      <div class="todoBlock">
+        <!-- Container for todo list content -->
+        <div class="titleHolder">
+          <!-- Container for title of todo list -->
+          <h1>Terrelle's: To Do List 🤓</h1>
+          <!-- Title of todo list -->
+        </div>
+
+        <div class="todoList">
+          <!-- Container for todo list items -->
+          <div class="listHolder">
+            <!-- Container for holding list items -->
+            <ul class="list">
+              <!-- Unordered list for todo list items -->
+              <li>
+                <span class="listName">Go to Gym</span>
+                <!-- Item in the todo list -->
+              </li>
+              <li>
+                <span class="listName">Take Nico for a walk</span>
+                <!-- Another item in the todo list -->
+              </li>
+            </ul>
+          </div>
+
+          <div class="formHolder">
+            <!-- Container for form to add new items -->
+            <div class="col big">
+              <!-- Column for input field -->
+              <input
+                type="text"
+                id="addInput"
+                placeholder="What would you like to do?"
+              />
+            </div>
+            <div class="col">
+              <!-- Column for add button -->
+              <button type="button" id="addBtn" class="btn-primary">
+                <!-- Button to add new todo item -->
+                Add Item
+              </button>
+            </div>
+            <div class="col">
+              <!-- Column for toggle button -->
+              <button type="button" id="toggleBtn" class="btn-primary">
+                <!-- Button to toggle visibility of todo list -->
+                Show List
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a class="process" href="/process-template.html">Process Work</a>
+    </div>
+
+    <script src="/script.js"></script>
+    <!-- Links to JavaScript file -->
+  </body>
+</html>

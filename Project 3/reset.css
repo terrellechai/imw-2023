@@ -1,0 +1,48 @@
+/* Importing the 'Instrument Sans' font family from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
+
+/* Setting box-sizing property to border-box for all HTML elements and applying 'Instrument Sans' font family */
+html {
+	box-sizing: border-box;
+    font-family: "Instrument Sans", sans-serif;
+}
+
+/* Inheriting box-sizing property for all elements and their pseudo-elements */
+*, *:before, *:after {
+	box-sizing: inherit;
+}
+
+/* Resetting margin, padding, and max-height for all elements */
+* {
+  max-height: 1000000px;
+  margin: 0;
+  padding: 0;
+}
+
+/* Setting line-height to 1 for the body */
+body {
+	line-height: 1;
+}
+
+/* Removing default list styles for ordered and unordered lists */
+ol, ul {
+	list-style: none;
+}
+
+/* Removing quotes for blockquote and q elements */
+blockquote, q {
+	quotes: none;
+}
+
+/* Removing content before and after blockquote and q elements */
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+
+/* Collapsing borders and removing spacing for table elements */
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
