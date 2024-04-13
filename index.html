@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Column Layout</title>
+    <style>
+      body,
+      html {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        overflow: hidden;
+      }
+
+      .container {
+        display: flex;
+        height: 100vh;
+      }
+
+      .left-column {
+        flex: 1;
+        overflow: hidden;
+        position: relative; /* Needed for absolute positioning of gradient */
+      }
+
+      .moving-gradient {
+        width: 100%;
+        height: 100vh;
+        background: linear-gradient(to bottom, rgb(0, 0, 0), #3f2a49);
+        background-size: 100% 100%; /* Adjust to control the speed of the animation */
+        animation: color 5s ease-in-out infinite; /* Adjust animation duration as needed */
+      }
+
+      @keyframes color {
+        0% {
+          background-position: 0 50%;
+        }
+        50% {
+          background-position: 100% 50%;
+        }
+        100% {
+          background-position: 0 50%;
+        }
+      }
+
+      .right-column {
+        flex: 1;
+        overflow-y: scroll;
+        background: #ffffff;
+        background-image: linear-gradient(
+            rgb(171, 171, 171) 1px,
+            transparent 1px
+          ),
+          linear-gradient(to right, rgb(204, 204, 204) 1px, transparent 1px);
+        background-size: 20px 20px; /* Adjust grid size as needed */
+      }
+
+      .section {
+        height: 100vh; /* Adjust height as needed */
+        border-bottom: 1px solid #ccc; /* Optional: Add a border between sections */
+      }
+
+      .me-img {
+        width: 50%;
+        margin: 15% 25% 0 25%;
+      }
+
+      .logo-img {
+        width: 7%;
+        margin: 20px 10px 0 20px;
+      }
+
+      .logo-text {
+        display: flex;
+        align-items: center;
+      }
+
+      h2 {
+        color: white;
+        font-family: "Plus Jakarta Sans", sans-serif;
+        font-size: 17px;
+        margin-top: 35px;
+      }
+
+      .title {
+        font-size: 80px;
+        align-content: center;
+        text-align: center;
+        font-family: "Plus Jakarta Sans", sans-serif;
+        transition: font-size 0.5s ease; /* Smooth transition */
+        margin-top: 50%;
+        cursor: pointer;
+      }
+
+      .title:hover {
+        color: grey;
+      }
+
+      .small-title {
+        font-size: 40px !important; /* Override font size */
+      }
+
+      .sub-titles {
+        display: none; /* Initially hide */
+        text-align: center;
+        font-size: 30px;
+        font-family: "Plus Jakarta Sans", sans-serif;
+        cursor: pointer;
+      }
+
+      .show {
+        display: block; /* Show sub-titles */
+      }
+
+      a {
+        text-decoration: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="left-column">
+        <div class="moving-gradient">
+          <div class="logo-text">
+            <img class="logo-img" src="/img/logo.png" alt="" />
+            <h2>TERRELLE CHAI</h2>
+          </div>
+          <img class="me-img" src="/img/ME - Jan 2023.png" alt="" />
+        </div>
+      </div>
+      <div class="right-column">
+        <div class="section">
+          <h1 class="title" onclick="toggleSize()">Projects</h1>
+          <div class="sub-titles">
+            <a
+              href="https://terrelletech.me/Project%201/index.html"
+              target="_blank"
+              >Storybook</a
+            >
+            <br />
+            <a
+              href="https://terrelletech.me/Project%202/index.html"
+              target="_blank"
+              >Poster</a
+            >
+            <br />
+            <a
+              href="https://terrelletech.me/Project%203/index.html"
+              target="_blank"
+              >Interaction</a
+            >
+          </div>
+        </div>
+        <div class="section">
+          <h1 class="title" onclick="toggleSize()">Exercises</h1>
+          <div class="sub-titles">
+            <a
+              href="https://terrelletech.me/exercises/e1/index.html"
+              target="_blank"
+              >Exercise: 1</a
+            >
+            <br />
+            <a
+              href="https://terrelletech.me/exercises/e2/Art1.html"
+              target="_blank"
+              >Exercise: 2</a
+            >
+            <br />
+            <a
+              href="https://terrelletech.me/exercises/e3/index.html"
+              target="_blank"
+              >Exercise: 3</a
+            >
+            <br />
+            <a
+              href="https://terrelletech.me/exercises/e4/index.html"
+              target="_blank"
+              >Exercise: 4</a
+            >
+            <br />
+            <a
+              href="https://terrelletech.me/exercises/e5/index.html"
+              target="_blank"
+              >Exercise: 5</a
+            >
+            <br />
+            <a
+              href="https://terrelletech.me/exercises/e6/index.html"
+              target="_blank"
+              >Exercise: 6</a
+            >
+            <br />
+            <a
+              href="https://terrelletech.me/exercises/e7/index.html"
+              target="_blank"
+              >Exercise: 7</a
+            >
+            <br />
+            <a
+              href="https://terrelletech.me/exercises/e8/index.html"
+              target="_blank"
+              >Exercise: 8</a
+            >
+            <br />
+          </div>
+        </div>
+        <div class="section">
+          <h1 class="title" onclick="toggleSize()">Readings</h1>
+          <div class="sub-titles">
+            <a href="/reading-1.html" target="_blank"
+              >Reading 1: A Handmade Web</a
+            >
+            <br />
+            <a href="/reading-2.html" target="_blank"
+              >Reading 2: What Screens Want</a
+            >
+            <br />
+            <a href="/reading-3.html" target="_blank"
+              >Reading 3: My website is a shifting</a
+            >
+          </div>
+        </div>
+        <div class="section">
+          <h1 class="title" onclick="toggleSize()">Resources</h1>
+          <div class="sub-titles">
+            <a href="https://www.w3schools.com/" target="_blank">w3schools</a>
+            <br />
+            <a href="https://developer.mozilla.org/en-US/" target="_blank"
+              >Mozilla</a
+            >
+            <br />
+            <a href="https://www.youtube.com" target="_blank">Youtube</a>
+            <br />
+            <a href="https://www.codecademy.com/" target="_blank">Codecademy</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      function toggleSize() {
+        var titles = document.querySelectorAll(".title");
+        var subTitles = document.querySelectorAll(".sub-titles");
+
+        // Loop through each title and toggle font size classes
+        titles.forEach(function (title) {
+          title.classList.toggle("small-title");
+        });
+
+        // Loop through each subtitle and toggle visibility
+        subTitles.forEach(function (subTitle) {
+          subTitle.classList.toggle("show");
+        });
+      }
+    </script>
+  </body>
+</html>
