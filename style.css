@@ -1,93 +1,93 @@
 body,
 html {
-  margin: 0;
-  padding: 0;
-  height: 100%;
-  overflow: hidden;
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+  height: 100%; /* Set height to full viewport height */
+  overflow: hidden; /* Hide overflow */
 }
 
 .container {
-  display: flex;
-  height: 100vh;
+  display: flex; /* Use flexbox layout */
+  height: 100vh; /* Set height to full viewport height */
 }
 
 .left-column {
-  flex: 1;
-  overflow: hidden;
+  flex: 1; /* Flex-grow: 1 (takes remaining space) */
+  overflow: hidden; /* Hide overflow */
   position: relative; /* Needed for absolute positioning of gradient */
 }
 
 .moving-gradient {
-  width: 100%;
-  height: 100vh;
-  background: linear-gradient(to bottom, rgb(0, 0, 0), #3f2a49);
-  background-size: 100% 100%; /* Adjust to control the speed of the animation */
-  animation: color 5s ease-in-out infinite; /* Adjust animation duration as needed */
+  width: 100%; /* Full width */
+  height: 100vh; /* Full viewport height */
+  background: linear-gradient(to bottom, rgb(0, 0, 0), #3f2a49); /* Gradient background */
+  background-size: 100% 100%; /* Adjust background size */
+  animation: color 5s ease-in-out infinite; /* Apply animation */
 }
 
 @keyframes color {
   0% {
-    background-position: 0 50%;
+    background-position: 0 50%; /* Initial background position */
   }
   50% {
-    background-position: 100% 50%;
+    background-position: 100% 50%; /* Middle background position */
   }
   100% {
-    background-position: 0 50%;
+    background-position: 0 50%; /* Final background position */
   }
 }
 
 .right-column {
-  flex: 1;
-  overflow-y: scroll;
-  background: #ffffff;
+  flex: 1; /* Flex-grow: 1 (takes remaining space) */
+  overflow-y: scroll; /* Enable vertical scrolling */
+  background: #ffffff; /* White background */
   background-image: linear-gradient(
       rgb(171, 171, 171) 1px,
       transparent 1px
     ),
-    linear-gradient(to right, rgb(204, 204, 204) 1px, transparent 1px);
-  background-size: 20px 20px; /* Adjust grid size as needed */
+    linear-gradient(to right, rgb(204, 204, 204) 1px, transparent 1px); /* Background image */
+  background-size: 20px 20px; /* Adjust grid size */
 }
 
 .section {
-  height: 100vh; /* Adjust height as needed */
-  border-bottom: 1px solid #ccc; /* Optional: Add a border between sections */
+  height: 100vh; /* Full viewport height */
+  border-bottom: 1px solid #ccc; /* Bottom border */
 }
 
 .me-img {
-  width: 50%;
-  margin: 15% 25% 0 25%;
+  width: 50%; /* Set width */
+  margin: 15% 25% 0 25%; /* Set margins */
 }
 
 .logo-img {
-  width: 7%;
-  margin: 20px 10px 0 20px;
+  width: 7%; /* Set width */
+  margin: 20px 10px 0 20px; /* Set margins */
 }
 
 .logo-text {
-  display: flex;
-  align-items: center;
+  display: flex; /* Use flexbox layout */
+  align-items: center; /* Align items vertically */
 }
 
 h2 {
-  color: white;
-  font-family: "Plus Jakarta Sans", sans-serif;
-  font-size: 17px;
-  margin-top: 35px;
+  color: white; /* Text color */
+  font-family: "Plus Jakarta Sans", sans-serif; /* Font family */
+  font-size: 17px; /* Font size */
+  margin-top: 35px; /* Top margin */
 }
 
 .title {
-  font-size: 80px;
-  align-content: center;
-  text-align: center;
-  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 80px; /* Font size */
+  align-content: center; /* Align content */
+  text-align: center; /* Center text */
+  font-family: "Plus Jakarta Sans", sans-serif; /* Font family */
   transition: font-size 0.5s ease; /* Smooth transition */
-  margin-top: 50%;
-  cursor: pointer;
+  margin-top: 50%; /* Top margin */
+  cursor: pointer; /* Cursor style */
 }
 
 .title:hover {
-  color: grey;
+  color: grey; /* Text color on hover */
 }
 
 .small-title {
@@ -96,10 +96,10 @@ h2 {
 
 .sub-titles {
   display: none; /* Initially hide */
-  text-align: center;
-  font-size: 30px;
-  font-family: "Plus Jakarta Sans", sans-serif;
-  cursor: pointer;
+  text-align: center; /* Center text */
+  font-size: 30px; /* Font size */
+  font-family: "Plus Jakarta Sans", sans-serif; /* Font family */
+  cursor: pointer; /* Cursor style */
 }
 
 .show {
@@ -107,5 +107,14 @@ h2 {
 }
 
 a {
-  text-decoration: none;
+  text-decoration: none; /* Remove underline */
+}
+
+h3 {
+    color: #ffffff; /* Text color */
+    font-family: "Plus Jakarta Sans", sans-serif; /* Font family */
+    font-size: 22px; /* Font size */
+    font-weight: 400; /* Font weight */
+    margin-left: 40px; /* Left margin */
+    margin-right: 40px; /* Right margin */
 }
